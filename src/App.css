@@ -9,3 +9,8 @@
   flex-direction: column;
   justify-content: center;
 }
+.ctas {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}

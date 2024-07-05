@@ -74,7 +74,9 @@ button:focus-visible {
 button.btn {
   background: #fff;
 }
-
+#reverse {
+  flex-direction: row-reverse;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #212353;

@@ -1,5 +1,5 @@
 import "../styles/Card.css";
-import rocket from "../assets/RocketLaunch.svg";
+import ArrowRight from "../assets/ArrowRight.svg";
 
 const Card = ({ img, title, desc, text }) => {
   return (
@@ -9,7 +9,7 @@ const Card = ({ img, title, desc, text }) => {
       <p>{desc}</p>
       {text && (
         <a href="">
-          {text} <img src={rocket} alt="go" />
+          {text} <img src={ArrowRight} alt="go" />
         </a>
       )}
     </div>
