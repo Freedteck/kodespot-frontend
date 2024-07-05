@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  padding: 33px 60px;
+  flex-direction: column;
+  gap: 100px;
+  background-color: #fff;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+#logo {
+  width: 230px;
+}
+#logo img {
+  width: 100%;
+}
+ul,
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+ul {
+  list-style: none;
+}
