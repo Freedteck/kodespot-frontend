@@ -12,5 +12,13 @@
 .ctas {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 32px;
+  flex-wrap: wrap;
+}
+#logo {
+  width: 230px;
+}
+#logo img {
+  width: 100%;
 }

@@ -1,5 +1,6 @@
 import About from "../components/About";
 import Everything from "../components/Everything";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Support from "../components/Support";
 import Testimonial from "../components/Testimonial";
@@ -14,6 +15,7 @@ const Landingpage = () => {
       <About />
       <Testimonial />
       <Support />
+      <Footer />
     </div>
   );
 };

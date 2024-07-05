@@ -1,6 +1,6 @@
 section.testimonial {
   display: flex;
-  padding: 150px 60px;
+  padding: 150px 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -10,10 +10,4 @@ section.testimonial {
 }
 .testimonial h2 {
   color: #fff;
-}
-section.testimonial .row {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  gap: 32px;
 }

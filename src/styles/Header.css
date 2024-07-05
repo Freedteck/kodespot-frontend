@@ -10,13 +10,9 @@ nav {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  /* flex-wrap: wrap; */
 }
-#logo {
-  width: 230px;
-}
-#logo img {
-  width: 100%;
-}
+
 ul,
 .nav-links {
   display: flex;

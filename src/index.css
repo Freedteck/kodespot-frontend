@@ -1,20 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
-
-:root {
-  font-family: poppins, sans-serif;
+* {
   scroll-behavior: smooth;
-
-  color-scheme: light dark;
   color: #212353;
-  background: #f8f9ff;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-
+/* html {
+  width: 100vw;
+} */
+body {
+  font-family: poppins, sans-serif;
+  background: #f8f9ff;
+}
 a {
   font-weight: 500;
   color: #4b5d68;
@@ -77,15 +73,85 @@ button.btn {
 #reverse {
   flex-direction: row-reverse;
 }
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #212353;
-    background: #f8f9ff;
+.menu {
+  display: none;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 32px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+@media (max-width: 1070px) {
+  .nav-links {
+    display: none;
   }
-  a:hover {
-    color: #747bff;
+  .menu {
+    display: block;
+    width: 35px;
   }
-  button {
-    background-color: #ccac00;
+  .menu img {
+    width: 100%;
+  }
+  .about p,
+  .support p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  .hero-text p {
+    font-size: 1.125rem;
+  }
+  .about p,
+  .support p {
+    font-size: 1.2rem;
+  }
+  footer .brand {
+    flex-shrink: 1;
+  }
+  #logo {
+    width: 150px;
+  }
+  section.what-we-do,
+  section.everything,
+  section.about,
+  section.testimonial,
+  section.support {
+    padding: 70px 10px;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    gap: 50px;
+  }
+  header,
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  h1 {
+    font-size: 1.85rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  .about p,
+  .support p {
+    font-size: 1rem;
+  }
+  .hero-text p {
+    font-size: 1.1rem;
   }
 }
