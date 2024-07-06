@@ -130,6 +130,13 @@ button.btn {
   footer .brand {
     flex-shrink: 1;
   }
+  section.what-we-do,
+  section.everything,
+  section.about,
+  section.testimonial,
+  section.support {
+    padding: 70px 20px;
+  }
 
   /* Mobile menu */
   .menu {
