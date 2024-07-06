@@ -4,9 +4,7 @@
   scroll-behavior: smooth;
   color: #212353;
 }
-/* html {
-  width: 100vw;
-} */
+
 body {
   font-family: poppins, sans-serif;
   background: #f8f9ff;
@@ -45,7 +43,7 @@ h3 {
 }
 button {
   display: flex;
-  padding: 16px 50px;
+  padding: 16px 30px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -73,6 +71,9 @@ button.btn {
 #reverse {
   flex-direction: row-reverse;
 }
+.medium {
+  display: none;
+}
 .menu {
   display: none;
 }
@@ -85,20 +86,28 @@ button.btn {
   max-width: 1200px;
 }
 
-@media (max-width: 1070px) {
-  .nav-links {
+@media (max-width: 1024px) {
+  #logo .large {
     display: none;
   }
-  .menu {
+  #logo {
+    width: auto;
+  }
+  #logo .medium {
     display: block;
-    width: 35px;
+    width: 70px;
   }
-  .menu img {
-    width: 100%;
+  section.what-we-do,
+  section.everything,
+  section.about,
+  section.testimonial,
+  section.support {
+    padding: 150px 20px;
   }
-  .about p,
-  .support p {
-    font-size: 1.5rem;
+  header,
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media (max-width: 800px) {
@@ -121,17 +130,61 @@ button.btn {
   footer .brand {
     flex-shrink: 1;
   }
-  #logo {
+
+  /* Mobile menu */
+  .menu {
+    display: block;
+    width: 35px;
+  }
+  .menu-links {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.1s ease-in-out;
+    color: #fff;
+    background-color: rgba(204, 172, 0, 0.2);
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu-links.show {
+    transform: translateX(0);
+  }
+  .menu-links ul {
+    width: 320px;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    padding: 30px;
+  }
+  .menu-links ul button {
+    background-color: transparent;
+  }
+  .menu-links #logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu-links #logo img {
     width: 150px;
   }
-  section.what-we-do,
-  section.everything,
-  section.about,
-  section.testimonial,
-  section.support {
-    padding: 70px 10px;
+  .menu img {
+    width: 35px;
+  }
+  .menu-links #logo .close {
+    width: 40px;
+  }
+  .about p,
+  .support p {
+    font-size: 1.5rem;
   }
 }
+
 @media (max-width: 500px) {
   header {
     gap: 50px;
@@ -150,5 +203,12 @@ button.btn {
   }
   .hero-text p {
     font-size: 1.1rem;
+  }
+  section.what-we-do,
+  section.everything,
+  section.about,
+  section.testimonial,
+  section.support {
+    padding: 70px 10px;
   }
 }
